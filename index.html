@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Petit Café - Café & Restaurant à Paris</title>
+    <meta name="description"
+        content="Le Petit Café, un espace chaleureux et convivial au cœur de Paris. Découvrez nos pâtisseries artisanales, notre café de spécialité et notre cuisine maison avec des produits frais.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="coffee-cup">
+                <div class="coffee"></div>
+            </div>
+            <p>Le Petit Café</p>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">Le Petit Café</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                        <li><a href="#a-propos" class="nav-link">À Propos</a></li>
+                        <li><a href="#menu" class="nav-link">Menu</a></li>
+                        <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="#reservation" class="btn btn-primary">Réserver</a>
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-image"
+                    style="background-image: url('https://scontent.ftas1-1.fna.fbcdn.net/v/t1.6435-9/83661564_171292550878233_7647824174068531200_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=Av34N8zHqL4Q7kNvgH7y2N2&_nc_oc=Adl_2PhYoqJb-Tuw-WdObLEMaTD9YE3HooE8JhCdn3aUW-cI2JQLQNXiQpTsa-KuK3E&_nc_zt=23&_nc_ht=scontent.ftas1-1.fna&_nc_gid=OlKGkhaEBNelJE69JtgItA&oh=00_AYHsrTLK6lRMr-n46qf1_fXDoT8lcEegCquXAZmg_bPmHg&oe=68017AE0')">
+                </div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="reveal-text">Un café chaleureux</span>
+                            <span class="reveal-text">au cœur de Paris</span>
+                        </h1>
+                        <p class="hero-subtitle reveal-text">Découvrez notre cuisine maison avec des produits frais et
+                            notre café de spécialité</p>
+                        <div class="hero-buttons">
+                            <a href="#menu" class="btn btn-primary">Découvrir notre menu</a>
+                            <a href="#reservation" class="btn btn-outline">Réserver une table</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-image"
+                    style="background-image: url('https://www.barcelo.com/guia-turismo/wp-content/uploads/2024/10/donde-comer-chuleton-en-bilbao.jpg')">
+                </div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="reveal-text">Pâtisseries artisanales</span>
+                            <span class="reveal-text">et gourmandes</span>
+                        </h1>
+                        <p class="hero-subtitle reveal-text">Savourez nos créations faites maison par notre chef
+                            pâtissier</p>
+                        <div class="hero-buttons">
+                            <a href="#menu" class="btn btn-primary">Voir nos pâtisseries</a>
+                            <a href="#reservation" class="btn btn-outline">Réserver une table</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-image"
+                    style="background-image: url('https://cachizer1.2gis.com/reviews-photos/6b5e4129-54b4-4262-b0bf-60d405bb8745.jpg?w=640')">
+                </div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="reveal-text">Brunches gourmands</span>
+                            <span class="reveal-text">et équilibrés</span>
+                        </h1>
+                        <p class="hero-subtitle reveal-text">Commencez votre journée avec notre sélection de brunchs
+                            savoureux</p>
+                        <div class="hero-buttons">
+                            <a href="#menu" class="btn btn-primary">Découvrir nos brunchs</a>
+                            <a href="#reservation" class="btn btn-outline">Réserver une table</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-controls">
+            <div class="hero-dots">
+                <span class="hero-dot active" data-slide="0"></span>
+                <span class="hero-dot" data-slide="1"></span>
+                <span class="hero-dot" data-slide="2"></span>
+            </div>
+            <div class="hero-arrows">
+                <button class="hero-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="hero-arrow next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Découvrir</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="a-propos">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-subtitle">À Propos</span>
+                    <h2 class="section-title">Notre histoire et notre passion</h2>
+                    <p>Bienvenue au Petit Café, un espace chaleureux et convivial au cœur de Paris. Depuis 2015, nous
+                        nous efforçons de créer une expérience culinaire authentique qui célèbre les saveurs françaises
+                        traditionnelles avec une touche contemporaine.</p>
+                    <p>Notre philosophie est simple : des ingrédients frais, locaux et de saison, préparés avec soin et
+                        passion. Notre chef, Jean Dupont, s'inspire des marchés parisiens pour créer des plats qui
+                        racontent une histoire et évoquent des souvenirs.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Café de spécialité</h3>
+                                <p>Torréfaction locale et sélection des meilleurs grains</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-bread-slice"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Pâtisseries artisanales</h3>
+                                <p>Créations maison préparées chaque matin</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Cuisine maison</h3>
+                                <p>Des plats préparés avec des produits frais et locaux</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#menu" class="btn btn-primary">Découvrir notre menu</a>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1735554063696-85e499988830?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8TCdpbnQlQzMlQTlyaWV1ciUyMGR1JTIwUGV0aXQlMjBDYWYlQzMlQTl8ZW58MHx8MHx8fDA%3D"
+                            alt="L'intérieur du Petit Café">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="card-text">
+                            <h3>15+</h3>
+                            <p>Années d'expérience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu section" id="menu">
+        <div class="container">
+            <span class="section-subtitle">Notre Menu</span>
+            <h2 class="section-title">Savourez nos spécialités</h2>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-target="petit-dejeuner">Petit Déjeuner</button>
+                <button class="menu-tab" data-target="dejeuner">Déjeuner</button>
+                <button class="menu-tab" data-target="patisseries">Pâtisseries</button>
+                <button class="menu-tab" data-target="boissons">Boissons</button>
+            </div>
+            <div class="menu-content">
+                <div class="menu-category active" id="petit-dejeuner">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://plus.unsplash.com/premium_photo-1661743823829-326b78143b30?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8UGV0aXQlMjBEJUMzJUE5amV1bmVyJTIwUGFyaXNpZW58ZW58MHx8MHx8fDA%3D"
+                                    alt="Petit déjeuner parisien">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Petit Déjeuner Parisien</h3>
+                                    <span class="menu-item-price">12€</span>
+                                </div>
+                                <p class="menu-item-description">Croissant, pain au chocolat, baguette fraîche avec
+                                    beurre et confiture, jus d'orange pressé et café</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1694624244758-197865b3d393?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8UGV0aXQlMjBEJUMzJUE5amV1bmVyJTIwUGFyaXNpZW58ZW58MHx8MHx8fDA%3D"
+                                    alt="Avocado toast">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Avocado Toast</h3>
+                                    <span class="menu-item-price">14€</span>
+                                </div>
+                                <p class="menu-item-description">Pain au levain grillé, avocat écrasé, œuf poché,
+                                    graines de sésame et piment d'Espelette</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://media.istockphoto.com/id/1388127710/photo/overnight-oatmeal-with-berries.webp?a=1&b=1&s=612x612&w=0&k=20&c=2VODr-QfpgEWvYHF73-t44xyWFjv9PR12EhEjb9f5_w="
+                                    alt="Granola maison">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Granola Maison</h3>
+                                    <span class="menu-item-price">9€</span>
+                                </div>
+                                <p class="menu-item-description">Yaourt grec, granola maison, fruits frais de saison et
+                                    miel</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="menu-category" id="dejeuner">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGh1bWFuJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D"
+                                    alt="Salade Niçoise">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Salade Niçoise</h3>
+                                    <span class="menu-item-price">16€</span>
+                                </div>
+                                <p class="menu-item-description">Thon mi-cuit, haricots verts, tomates, œufs durs,
+                                    olives niçoises et vinaigrette à l'huile d'olive</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="human.avif"
+                                    alt="Croque Monsieur">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Croque Monsieur</h3>
+                                    <span class="menu-item-price">14€</span>
+                                </div>
+                                <p class="menu-item-description">Pain de mie, jambon blanc, béchamel et fromage gratiné,
+                                    servi avec une salade verte</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1586822339087-80cc375ac083?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Quiche Lorraine">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Quiche Lorraine</h3>
+                                    <span class="menu-item-price">13€</span>
+                                </div>
+                                <p class="menu-item-description">Pâte brisée, lardons, crème fraîche et œufs, servie
+                                    avec une salade verte</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Tartine Saumon">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Tartine Saumon</h3>
+                                    <span class="menu-item-price">15€</span>
+                                </div>
+                                <p class="menu-item-description">Pain au levain, fromage frais aux herbes, saumon fumé,
+                                    avocat et aneth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-category" id="patisseries">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="human.avif" alt="Éclair au Chocolat">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Éclair au Chocolat</h3>
+                                    <span class="menu-item-price">6€</span>
+                                </div>
+                                <p class="menu-item-description">Pâte à choux, crème pâtissière au chocolat noir et
+                                    glaçage au chocolat</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Tarte aux Pommes">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Tarte aux Pommes</h3>
+                                    <span class="menu-item-price">7€</span>
+                                </div>
+                                <p class="menu-item-description">Pâte sablée, compote de pommes et pommes fraîches
+                                    caramélisées</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Paris-Brest">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Paris-Brest</h3>
+                                    <span class="menu-item-price">8€</span>
+                                </div>
+                                <p class="menu-item-description">Pâte à choux, crème mousseline pralinée et amandes
+                                    effilées</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Macaron">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Macarons (4 pièces)</h3>
+                                    <span class="menu-item-price">9€</span>
+                                </div>
+                                <p class="menu-item-description">Assortiment de macarons : chocolat, vanille, framboise
+                                    et pistache</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-category" id="boissons">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Café de Spécialité">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Café de Spécialité</h3>
+                                    <span class="menu-item-price">3.5€</span>
+                                </div>
+                                <p class="menu-item-description">Espresso, café filtre ou americano, préparé avec notre
+                                    café torréfié localement</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Latte Art">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Latte Art</h3>
+                                    <span class="menu-item-price">5€</span>
+                                </div>
+                                <p class="menu-item-description">Espresso et lait mousseux avec motif artistique</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Chocolat Chaud">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Chocolat Chaud</h3>
+                                    <span class="menu-item-price">5.5€</span>
+                                </div>
+                                <p class="menu-item-description">Chocolat noir fondu dans du lait chaud, garni de crème
+                                    fouettée</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Jus Pressé">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Jus Pressé</h3>
+                                    <span class="menu-item-price">6€</span>
+                                </div>
+                                <p class="menu-item-description">Orange, pamplemousse ou citron pressé à la minute</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-cta">
+                <a href="#reservation" class="btn btn-primary">Réserver une table</a>
+                <a href="#contact" class="btn btn-outline">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section">
+        <div class="container">
+            <span class="section-subtitle">Témoignages</span>
+            <h2 class="section-title">Ce que disent nos clients</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Un véritable havre de paix au cœur de Paris. Le café est
+                            exceptionnel, les pâtisseries sont divines et le service est impeccable. Je recommande
+                            vivement le brunch du dimanche !</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://images.unsplash.com/photo-1586822339087-80cc375ac083?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGh1bWFuJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D" alt="Sophie Martin">
+                            </div>
+                            <div class="author-info">
+                                <h3>Sophie Martin</h3>
+                                <span>Cliente régulière</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">J'ai découvert ce petit café par hasard et quelle belle surprise !
+                            L'ambiance est chaleureuse, les plats sont délicieux et le personnel est très attentionné.
+                            Un endroit à ne pas manquer lors de votre visite à Paris.</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGh1bWFuJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D" alt="Thomas Dubois">
+                            </div>
+                            <div class="author-info">
+                                <h3>Thomas Dubois</h3>
+                                <span>Touriste</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">En tant que critique culinaire, je suis souvent difficile à
+                            impressionner, mais Le Petit Café a réussi à me charmer. La qualité des ingrédients, le
+                            savoir-faire du chef et l'atmosphère authentique en font un lieu incontournable.</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://images.unsplash.com/photo-1621983266286-09645be8fd01?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGh1bWFuJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D" alt="Marie Leroy">
+                            </div>
+                            <div class="author-info">
+                                <h3>Marie Leroy</h3>
+                                <span>Critique culinaire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <div class="testimonial-dots">
+                    <span class="testimonial-dot active" data-slide="0"></span>
+                    <span class="testimonial-dot" data-slide="1"></span>
+                    <span class="testimonial-dot" data-slide="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section" id="galerie">
+        <div class="container">
+            <span class="section-subtitle">Notre Galerie</span>
+            <h2 class="section-title">Découvrez notre univers</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://plus.unsplash.com/premium_photo-1679516403540-daa04a035cf9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8SW50JUMzJUE5cmlldXIlMjBkdSUyMGNhZiVDMyVBOSUyME5vdHJlJTIwZXNwYWNlfGVufDB8fDB8fHww" alt="Intérieur du café">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Notre espace</h3>
+                            <p>Un intérieur chaleureux et convivial</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1640259908934-dad961fba30d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8SW50JUMzJUE5cmlldXIlMjBkdSUyMGNhZiVDMyVBOSUyME5vdHJlJTIwZXNwYWNlfGVufDB8fDB8fHww" alt="Café de spécialité">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Café de spécialité</h3>
+                            <p>Torréfaction locale et savoir-faire</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1582970552008-ac972035ba25?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fEludCVDMyVBOXJpZXVyJTIwZHUlMjBjYWYlQzMlQTklMjBOb3RyZSUyMGVzcGFjZXxlbnwwfHwwfHx8MA%3D%3D" alt="Pâtisseries artisanales">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Pâtisseries artisanales</h3>
+                            <p>Créations gourmandes et raffinées</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1635259457519-738a9802ca5a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEludCVDMyVBOXJpZXVyJTIwZHUlMjBjYWYlQzMlQTklMjBOb3RyZSUyMGVzcGFjZXxlbnwwfHwwfHx8MA%3D%3D" alt="Brunch du dimanche">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Brunch du dimanche</h3>
+                            <p>Une expérience gourmande et équilibrée</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://plus.unsplash.com/premium_photo-1736167753494-13b26720e9fe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEludCVDMyVBOXJpZXVyJTIwZHUlMjBjYWYlQzMlQTklMjBOb3RyZSUyMGVzcGFjZXxlbnwwfHwwfHx8MA%3D%3D" alt="Terrasse ensoleillée">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Notre terrasse</h3>
+                            <p>Un espace extérieur agréable</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1540662289319-f8baa5a5af06?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fEludCVDMyVBOXJpZXVyJTIwZHUlMjBjYWYlQzMlQTklMjBOb3RyZSUyMGVzcGFjZXxlbnwwfHwwfHx8MA%3D%3D" alt="Équipe du café">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Notre équipe</h3>
+                            <p>Un service rapide et souriant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation section" id="reservation">
+        <div class="container">
+            <div class="reservation-content">
+                <div class="reservation-image">
+                    <img src="https://images.unsplash.com/photo-1505935428862-770b6f24f629?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Réservez une table">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="reservation-form">
+                    <span class="section-subtitle">Réservation</span>
+                    <h2 class="section-title">Réservez votre table</h2>
+                    <p>Pour garantir votre place et profiter pleinement de votre expérience au Petit Café, nous vous
+                        recommandons de réserver à l'avance.</p>
+                    <form id="reservationForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group  name=" name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Heure</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Nombre de personnes</label>
+                            <select id="guests" name="guests" required>
+                                <option value="" disabled selected>Sélectionnez</option>
+                                <option value="1">1 personne</option>
+                                <option value="2">2 personnes</option>
+                                <option value="3">3 personnes</option>
+                                <option value="4">4 personnes</option>
+                                <option value="5">5 personnes</option>
+                                <option value="6">6 personnes ou plus</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message (optionnel)</label>
+                            <textarea id="message" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Réserver maintenant</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-subtitle">Contact</span>
+                    <h2 class="section-title">Nous contacter</h2>
+                    <p>N'hésitez pas à nous contacter pour toute question ou pour organiser un événement privé.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Adresse</h3>
+                                <p>Atatürk Caddesi No:120, Konyaaltı, 07070 Antalya, Türkiye</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Téléphone</h3>
+                                <p>+90 242 789 45 67</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>contact@lepetitcafe.fr</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Horaires d'ouverture</h3>
+                                <p>Lundi - Vendredi: 8h00 - 20h00</p>
+                                <p>Samedi - Dimanche: 9h00 - 21h00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-tripadvisor"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2124690897!2d2.3354860156742797!3d48.86618007928823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e3c844d5dff%3A0x5e0b37450238c30!2s15%20Rue%20des%20Petits%20Champs%2C%2075001%20Paris%2C%20France!5e0!3m2!1sen!2sus!4v1625764215694!5m2!1sen!2sus"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="logo-text">Le Petit Café</span>
+                    </a>
+                    <p>Un café chaleureux et convivial au cœur de Paris.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#a-propos">À Propos</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#galerie">Galerie</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Informations</h3>
+                    <ul>
+                        <li><a href="politique-de-confidentialite.html">Politique de confidentialité</a></li>
+                        <li><a href="conditions-generales.html">Conditions générales</a></li>
+                        <li><a href="#reservation">Réservation</a></li>
+                        <li><a href="#contact">Nous contacter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Inscrivez-vous pour recevoir nos actualités et offres spéciales.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Le Petit Café. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <i class="fas fa-cookie-bite"></i>
+                <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant à naviguer,
+                    vous acceptez notre <a href="politique-de-confidentialite.html">politique de confidentialité</a>.
+                </p>
+            </div>
+            <div class="cookie-buttons">
+                <button id="cookieAccept" class="btn btn-primary btn-sm">Accepter</button>
+                <button id="cookieReject" class="btn btn-outline btn-sm">Refuser</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
