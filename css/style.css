@@ -382,6 +382,7 @@
   .hero {
     height: 100vh;
     min-height: 700px;
+          padding: 100px 0;
     position: relative;
     overflow: hidden;
   }
